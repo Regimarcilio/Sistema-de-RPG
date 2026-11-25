@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Sistema de RPG</text>
+    
+      <text x="455" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Arena de Combate</text>
+      
+    
+      <text x="620" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Loja e Inventário</text>
+      <rect x="620" y="53" width="129.2" height="2" fill="#FBBF24"/>
+    
+      <text x="775" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Banco SQLite</text>
+      
+    
+      <text x="905" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Testes e POO</text>
+      
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Executar PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Arquitetura Orientada a Objetos e Persistência em SQLite</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Camada de domínio com abstração, encapsulamento, herança e polimorfismo persistida em esquema relacional 3FN.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Efeitos Sonoros Ativos</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="1280" height="64" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="223" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="14">Personagem ativo:</text>
+  <rect x="236" y="200" width="230" height="36" rx="8" fill="#020617" stroke="#334155"/>
+  <text x="252" y="223" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13">Arthas (Guerreiro · Nv 2)</text>
+  <text x="1140" y="223" fill="#FCD34D" font-family="monospace" font-size="14" font-weight="600">Ouro: 40</text>
+  <text x="1240" y="223" fill="#E2E8F0" font-family="monospace" font-size="14">Capacidade: 2/10</text>
+
+  <rect x="80" y="274" width="736" height="440" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="312" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Catálogo da Loja</text>
+  <text x="104" y="336" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">A ordem de validação verifica capacidade do inventário antes de cobrar o ouro.</text>
+
+  
+      <text x="104" y="376" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Poção de Vida Pequena</text>
+      <text x="298.4" y="376" fill="#94A3B8" font-family="monospace" font-size="12">· PocaoVida</text>
+      <text x="104" y="398" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Recupera +30 de vida (HP).</text>
+      <text x="676" y="388" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">20 ouro</text>
+      <rect x="694" y="366" width="98" height="34" rx="8" fill="#F59E0B" stroke="none"/>
+      <text x="743" y="388" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Comprar</text>
+      <line x1="104" y1="420" x2="792" y2="420" stroke="#1E293B"/>
+    
+      <text x="104" y="458" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Poção de Vida Grande</text>
+      <text x="290" y="458" fill="#94A3B8" font-family="monospace" font-size="12">· PocaoVida</text>
+      <text x="104" y="480" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Recupera +80 de vida (HP).</text>
+      <text x="676" y="470" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">50 ouro</text>
+      <rect x="694" y="448" width="98" height="34" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="743" y="470" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Comprar</text>
+      <line x1="104" y1="502" x2="792" y2="502" stroke="#1E293B"/>
+    
+      <text x="104" y="540" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Poção de Mana</text>
+      <text x="231.2" y="540" fill="#94A3B8" font-family="monospace" font-size="12">· PocaoMana</text>
+      <text x="104" y="562" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Recupera +40 de mana (MP).</text>
+      <text x="676" y="552" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">30 ouro</text>
+      <rect x="694" y="530" width="98" height="34" rx="8" fill="#F59E0B" stroke="none"/>
+      <text x="743" y="552" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Comprar</text>
+      <line x1="104" y1="584" x2="792" y2="584" stroke="#1E293B"/>
+    
+      <text x="104" y="622" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Elixir de Experiência</text>
+      <text x="298.4" y="622" fill="#94A3B8" font-family="monospace" font-size="12">· ElixirXP</text>
+      <text x="104" y="644" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Concede +50 de experiência (XP) e pode subir de nível.</text>
+      <text x="676" y="634" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">60 ouro</text>
+      <rect x="694" y="612" width="98" height="34" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="743" y="634" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Comprar</text>
+      
+    
+
+  <rect x="840" y="274" width="520" height="240" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="864" y="312" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Inventário do Herói</text>
+  <text x="1336" y="312" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2/10 slots</text>
+
+  <text x="864" y="362" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Poção de Vida Pequena</text>
+  <text x="864" y="382" fill="#94A3B8" font-family="monospace" font-size="12">PocaoVida · Qtd 1 · Efeito +30</text>
+  <rect x="1238" y="352" width="98" height="32" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="1287" y="373" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Usar Item</text>
+  <line x1="864" y1="406" x2="1336" y2="406" stroke="#1E293B"/>
+
+  <text x="864" y="442" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Poção de Mana</text>
+  <text x="864" y="462" fill="#94A3B8" font-family="monospace" font-size="12">PocaoMana · Qtd 1 · Efeito +40</text>
+  <rect x="1238" y="432" width="98" height="32" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="1287" y="453" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Usar Item</text>
+
+  <rect x="840" y="538" width="520" height="176" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="864" y="574" fill="#F1F5F9" font-family="Georgia, serif" font-size="17" font-weight="bold">Teste de Exceções de Domínio</text>
+  <text x="864" y="600" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12.5">Dispare cenários protegidos pelas exceções do domínio e observe a</text>
+  <text x="864" y="618" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12.5">resposta segura do backend e do SQLite.</text>
+  <rect x="864" y="644" width="184" height="34" rx="8" fill="#1E293B"/>
+  <text x="956" y="666" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Usar "Espada Lendária"</text>
+  <rect x="1062" y="644" width="212" height="34" rx="8" fill="#1E293B"/>
+  <text x="1168" y="666" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Salvar Nome em Outra Classe</text>
+
+</svg>

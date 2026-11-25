@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Sistema de RPG</text>
+    
+      <text x="455" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Arena de Combate</text>
+      
+    
+      <text x="620" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Loja e Inventário</text>
+      
+    
+      <text x="775" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Banco SQLite</text>
+      
+    
+      <text x="905" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Testes e POO</text>
+      <rect x="905" y="53" width="91.19999999999999" height="2" fill="#FBBF24"/>
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Executar PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Arquitetura Orientada a Objetos e Persistência em SQLite</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Camada de domínio com abstração, encapsulamento, herança e polimorfismo persistida em esquema relacional 3FN.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Efeitos Sonoros Ativos</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="1280" height="456" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="222" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Testes Automatizados de Domínio e SQLite</text>
+  <text x="104" y="244" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">11 cenários de borda executados em banco SQLite isolado (:memory:), sem alterar rpg.db.</text>
+  <text x="1166" y="226" text-anchor="end" fill="#34D399" font-family="monospace" font-size="13.5" font-weight="bold">11/11 aprovados</text>
+  <rect x="1186" y="202" width="150" height="34" rx="8" fill="#F59E0B"/>
+  <text x="1261" y="224" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Executar 11 Testes</text>
+
+  <rect x="104" y="264" width="1232" height="354" rx="10" fill="#090E1B" stroke="#1E293B"/>
+  
+      <circle cx="126" cy="286" r="5" fill="#10B981"/>
+      <text x="142" y="290" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">pocao_nao_e_perdida_se_efeito_falha</text>
+      <text x="530" y="290" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Atomicidade do uso de item</text>
+      <text x="1238" y="290" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="290" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.18 ms</text>
+      <line x1="104" y1="300" x2="1336" y2="300" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="317" r="5" fill="#10B981"/>
+      <text x="142" y="321" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">valores_invalidos_sao_rejeitados</text>
+      <text x="530" y="321" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Validação estrita de entradas numéricas</text>
+      <text x="1238" y="321" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="321" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.12 ms</text>
+      <line x1="104" y1="331" x2="1336" y2="331" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="348" r="5" fill="#10B981"/>
+      <text x="142" y="352" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">monstro_nao_e_salvo</text>
+      <text x="530" y="352" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Separação Jogável vs NPC na persistência</text>
+      <text x="1238" y="352" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="352" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.84 ms</text>
+      <line x1="104" y1="362" x2="1336" y2="362" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="379" r="5" fill="#10B981"/>
+      <text x="142" y="383" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">capacidade_do_inventario_persiste</text>
+      <text x="530" y="383" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Fidelidade da hidratação</text>
+      <text x="1238" y="383" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="383" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.72 ms</text>
+      <line x1="104" y1="393" x2="1336" y2="393" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="410" r="5" fill="#10B981"/>
+      <text x="142" y="414" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">item_desconhecido_e_cadastrado_ao_salvar</text>
+      <text x="530" y="414" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Integridade referencial automática</text>
+      <text x="1238" y="414" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="414" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.91 ms</text>
+      <line x1="104" y1="424" x2="1336" y2="424" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="441" r="5" fill="#10B981"/>
+      <text x="142" y="445" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">nome_duplicado_de_outra_classe_e_rejeitado</text>
+      <text x="530" y="445" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Unicidade semântica por nome e classe</text>
+      <text x="1238" y="445" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="445" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.68 ms</text>
+      <line x1="104" y1="455" x2="1336" y2="455" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="472" r="5" fill="#10B981"/>
+      <text x="142" y="476" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">ids_sao_sequenciais_apos_varios_saves</text>
+      <text x="530" y="476" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Eficiência de chaves primárias</text>
+      <text x="1238" y="476" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="476" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.77 ms</text>
+      <line x1="104" y1="486" x2="1336" y2="486" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="503" r="5" fill="#10B981"/>
+      <text x="142" y="507" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">monstro_morto_nao_luta_de_novo</text>
+      <text x="530" y="507" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Pré-condição de combate</text>
+      <text x="1238" y="507" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="507" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.09 ms</text>
+      <line x1="104" y1="517" x2="1336" y2="517" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="534" r="5" fill="#10B981"/>
+      <text x="142" y="538" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">loja_nao_cobra_se_inventario_cheio</text>
+      <text x="530" y="538" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Ordem segura de transação na Loja</text>
+      <text x="1238" y="538" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="538" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.11 ms</text>
+      <line x1="104" y1="548" x2="1336" y2="548" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="565" r="5" fill="#10B981"/>
+      <text x="142" y="569" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">salvar_e_carregar_preserva_estado_e_tipo</text>
+      <text x="530" y="569" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Polimorfismo + Persistência 3FN</text>
+      <text x="1238" y="569" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="569" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.88 ms</text>
+      <line x1="104" y1="579" x2="1336" y2="579" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="596" r="5" fill="#10B981"/>
+      <text x="142" y="600" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">excluir_remove_inventario_em_cascata</text>
+      <text x="530" y="600" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Integridade referencial (FK Cascade)</text>
+      <text x="1238" y="600" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Aprovado</text>
+      <text x="1314" y="600" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.79 ms</text>
+      
+    
+
+  <text x="80" y="678" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Os 4 Pilares de POO no Projeto</text>
+  
+      <rect x="80" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="100" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Abstração</text>
+      <text x="100" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Personagem, Item e IUsavel definem</text>
+      <text x="100" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">contratos mínimos e ocultam detalhes.</text>
+    
+      <rect x="405" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="425" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Encapsulamento</text>
+      <text x="425" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Vida, mana, XP, ouro e capacidade</text>
+      <text x="425" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">só mudam com validação estrita.</text>
+    
+      <rect x="730" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="750" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Herança</text>
+      <text x="750" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Guerreiro, Mago, Arqueiro e Monstro</text>
+      <text x="750" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">herdam de Personagem; poções de Item.</text>
+    
+      <rect x="1055" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="1075" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Polimorfismo</text>
+      <text x="1075" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">atacar(), habilidade_especial() e usar()</text>
+      <text x="1075" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">variam por subclasse em execução.</text>
+    
+
+</svg>

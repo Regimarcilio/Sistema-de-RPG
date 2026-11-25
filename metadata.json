@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de RPG — Arquitetura e Persistência",
+  "description": "Sistema completo de RPG orientado a objetos com combate por turnos, loja, inventário, persistência relacional em SQLite e suíte de testes automatizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

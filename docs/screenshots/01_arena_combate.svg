@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Sistema de RPG</text>
+    
+      <text x="455" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Arena de Combate</text>
+      <rect x="455" y="53" width="121.6" height="2" fill="#FBBF24"/>
+    
+      <text x="620" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Loja e Inventário</text>
+      
+    
+      <text x="775" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Banco SQLite</text>
+      
+    
+      <text x="905" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Testes e POO</text>
+      
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Executar PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Arquitetura Orientada a Objetos e Persistência em SQLite</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Camada de domínio com abstração, encapsulamento, herança e polimorfismo persistida em esquema relacional 3FN.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Efeitos Sonoros Ativos</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="400" height="270" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="220" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Heróis Salvos</text>
+  <text x="104" y="240" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Persistidos em SQLite · 2 registro(s)</text>
+  <rect x="366" y="200" width="94" height="30" rx="8" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.4"/>
+  <text x="413" y="220" text-anchor="middle" fill="#FCD34D" font-family="system-ui, sans-serif" font-size="12" font-weight="600">+ Novo Herói</text>
+
+  <rect x="104" y="264" width="38" height="38" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <text x="123" y="288" text-anchor="middle" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">G</text>
+  <text x="154" y="279" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Arthas</text>
+  <text x="154" y="298" fill="#94A3B8" font-family="monospace" font-size="11.5">Guerreiro · Nv 2 · HP 130/130 · 40 ouro</text>
+  <line x1="104" y1="318" x2="456" y2="318" stroke="#1E293B"/>
+
+  <rect x="104" y="334" width="38" height="38" rx="8" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="123" y="358" text-anchor="middle" fill="#34D399" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">A</text>
+  <text x="154" y="349" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Legolas</text>
+  <text x="154" y="368" fill="#94A3B8" font-family="monospace" font-size="11.5">Arqueiro · Nv 1 · HP 90/90 · 100 ouro</text>
+
+  <rect x="80" y="476" width="400" height="210" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="510" fill="#F1F5F9" font-family="Georgia, serif" font-size="16" font-weight="bold">Inventário em Campo</text>
+  <text x="456" y="510" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2/10 un.</text>
+  <text x="104" y="550" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13.5" font-weight="600">Poção de Vida Pequena</text>
+  <text x="104" y="568" fill="#94A3B8" font-family="monospace" font-size="11">PocaoVida · +30 efeito · Qtd 1</text>
+  <rect x="386" y="538" width="70" height="30" rx="8" fill="#1E293B"/>
+  <text x="421" y="558" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="12">Usar</text>
+  <line x1="104" y1="586" x2="456" y2="586" stroke="#1E293B"/>
+  <text x="104" y="616" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13.5" font-weight="600">Poção de Mana</text>
+  <text x="104" y="634" fill="#94A3B8" font-family="monospace" font-size="11">PocaoMana · +40 efeito · Qtd 1</text>
+  <rect x="386" y="604" width="70" height="30" rx="8" fill="#1E293B"/>
+  <text x="421" y="624" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="12">Usar</text>
+
+  <rect x="504" y="186" width="856" height="145" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="528" y="218" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Bestiário da Arena</text>
+  <text x="528" y="238" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">NPCs não jogáveis (JOGAVEL = False) para testar combate por turnos e recompensas</text>
+  <rect x="1174" y="200" width="162" height="30" rx="8" fill="#1E293B"/>
+  <text x="1255" y="220" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Invocar Novo Oponente</text>
+
+  
+      <rect x="528" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="540" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Goblin Saqueador</text>
+      <text x="540" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Fácil · HP 45 · For 7</text>
+    
+      <rect x="732" y="256" width="192" height="58" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B"/>
+      <text x="744" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Orc Selvagem</text>
+      <text x="744" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Médio · HP 90 · For 12</text>
+    
+      <rect x="936" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="948" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Cavaleiro Negro</text>
+      <text x="948" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Difícil · HP 145 · For 18</text>
+    
+      <rect x="1140" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="1152" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Dragão Ancião</text>
+      <text x="1152" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Chefe · HP 400 · For 30</text>
+    
+
+  <rect x="504" y="352" width="856" height="316" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <rect x="528" y="376" width="392" height="214" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <rect x="548" y="396" width="44" height="44" rx="10" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <text x="570" y="424" text-anchor="middle" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">G</text>
+  <text x="604" y="414" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Arthas</text>
+  <text x="604" y="434" fill="#94A3B8" font-family="monospace" font-size="11.5">Guerreiro · Nível 2 · Em combate</text>
+
+  <text x="548" y="464" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Vida (HP)</text>
+  <text x="900" y="464" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">130/130</text>
+  <rect x="548" y="472" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="472" width="352" height="8" rx="4" fill="#10B981"/>
+
+  <text x="548" y="502" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Mana (MP)</text>
+  <text x="900" y="502" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">25/35</text>
+  <rect x="548" y="510" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="510" width="250" height="8" rx="4" fill="#0EA5E9"/>
+
+  <text x="548" y="540" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Experiência (XP)</text>
+  <text x="900" y="540" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">20/200</text>
+  <rect x="548" y="548" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="548" width="42" height="8" rx="4" fill="#F59E0B"/>
+  <text x="548" y="576" fill="#94A3B8" font-family="monospace" font-size="11.5">Força: 17          Ouro: 40          Especial: 10 MP</text>
+
+  <rect x="944" y="376" width="392" height="214" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <rect x="964" y="396" width="44" height="44" rx="10" fill="#EF4444" fill-opacity="0.12" stroke="#EF4444" stroke-opacity="0.35"/>
+  <text x="986" y="424" text-anchor="middle" fill="#F87171" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">M</text>
+  <text x="1020" y="414" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Orc Selvagem</text>
+  <text x="1020" y="434" fill="#94A3B8" font-family="monospace" font-size="11.5">Monstro NPC · Ativo</text>
+
+  <text x="964" y="464" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Vida do Monstro (HP)</text>
+  <text x="1316" y="464" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">56/90</text>
+  <rect x="964" y="472" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="964" y="472" width="218" height="8" rx="4" fill="#EF4444"/>
+  <text x="964" y="576" fill="#94A3B8" font-family="monospace" font-size="11.5">Força: 12        Recompensa: +120 XP        +40 ouro</text>
+
+  <line x1="528" y1="606" x2="1336" y2="606" stroke="#1E293B"/>
+  <rect x="528" y="618" width="134" height="36" rx="8" fill="#1E293B"/>
+  <text x="595" y="641" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Ataque Básico</text>
+  <rect x="674" y="618" width="196" height="36" rx="8" fill="#F59E0B"/>
+  <text x="772" y="641" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Golpe Poderoso (10 MP)</text>
+  <rect x="1142" y="618" width="194" height="36" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="1239" y="641" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Resolver Combate Completo</text>
+
+  <rect x="504" y="688" width="856" height="142" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="528" y="718" fill="#F1F5F9" font-family="Georgia, serif" font-size="16" font-weight="bold">Registro de Turnos</text>
+  <text x="1336" y="718" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2 evento(s)</text>
+  <rect x="528" y="734" width="808" height="80" rx="8" fill="#020617" stroke="#1E293B"/>
+  <text x="544" y="760" fill="#CBD5E1" font-family="monospace" font-size="12">Arthas usa Golpe Poderoso -&gt; 34 dano (monstro HP 56)</text>
+  <text x="544" y="784" fill="#CBD5E1" font-family="monospace" font-size="12">Orc Selvagem ataca -&gt; 13 dano (herói HP 117)</text>
+
+</svg>
