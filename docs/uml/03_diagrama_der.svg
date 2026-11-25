@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680">
+  <rect width="1440" height="680" fill="#0B1120"/>
+  <text x="48" y="46" fill="#F8FAFC" font-family="Georgia, serif" font-size="24" font-weight="bold">Diagrama Entidade-Relacionamento (DER — 3FN)</text>
+  <text x="48" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Modelo relacional normalizado em SQLite (rpg.db) com PRAGMA foreign_keys = ON e exclusão em cascata.</text>
+  <line x1="48" y1="86" x2="1392" y2="86" stroke="#1E293B"/>
+
+  <!-- Tabela personagens -->
+  <rect x="60" y="130" width="380" height="390" rx="10" fill="#11192B" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <rect x="60" y="130" width="380" height="44" rx="10" fill="#0F172A"/>
+  <rect x="60" y="164" width="380" height="10" fill="#0F172A"/>
+  <text x="80" y="158" fill="#FBBF24" font-family="monospace" font-size="16" font-weight="bold">personagens</text>
+  <text x="420" y="158" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">Entidade Forte</text>
+  <line x1="60" y1="174" x2="440" y2="174" stroke="#334155"/>
+
+  
+      <text x="80" y="200" fill="#FBBF24" font-family="monospace" font-size="11.5" font-weight="bold">PK</text>
+      <text x="116" y="200" fill="#F1F5F9" font-family="monospace" font-size="12">id</text>
+      <text x="420" y="200" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER AUTOINCREMENT</text>
+    
+      <text x="80" y="226" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="bold">UQ</text>
+      <text x="116" y="226" fill="#F1F5F9" font-family="monospace" font-size="12">nome</text>
+      <text x="420" y="226" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">TEXT NOT NULL UNIQUE</text>
+    
+      <text x="80" y="252" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="252" fill="#F1F5F9" font-family="monospace" font-size="12">classe</text>
+      <text x="420" y="252" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">TEXT NOT NULL</text>
+    
+      <text x="80" y="278" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="278" fill="#F1F5F9" font-family="monospace" font-size="12">nivel</text>
+      <text x="420" y="278" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="304" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="304" fill="#F1F5F9" font-family="monospace" font-size="12">vida_max</text>
+      <text x="420" y="304" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="330" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="330" fill="#F1F5F9" font-family="monospace" font-size="12">vida</text>
+      <text x="420" y="330" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="356" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="356" fill="#F1F5F9" font-family="monospace" font-size="12">mana_max</text>
+      <text x="420" y="356" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="382" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="382" fill="#F1F5F9" font-family="monospace" font-size="12">mana</text>
+      <text x="420" y="382" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="408" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="408" fill="#F1F5F9" font-family="monospace" font-size="12">forca</text>
+      <text x="420" y="408" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="434" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="434" fill="#F1F5F9" font-family="monospace" font-size="12">xp</text>
+      <text x="420" y="434" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="460" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="460" fill="#F1F5F9" font-family="monospace" font-size="12">ouro</text>
+      <text x="420" y="460" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="80" y="486" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="116" y="486" fill="#F1F5F9" font-family="monospace" font-size="12">capacidade</text>
+      <text x="420" y="486" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+
+  <!-- Tabela inventario (Associativa) -->
+  <rect x="530" y="180" width="380" height="220" rx="10" fill="#11192B" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <rect x="530" y="180" width="380" height="44" rx="10" fill="#0F172A"/>
+  <rect x="530" y="214" width="380" height="10" fill="#0F172A"/>
+  <text x="550" y="208" fill="#38BDF8" font-family="monospace" font-size="16" font-weight="bold">inventario</text>
+  <text x="890" y="208" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">Associativa (N:N)</text>
+  <line x1="530" y1="224" x2="910" y2="224" stroke="#334155"/>
+
+  
+      <text x="550" y="258" fill="#FBBF24" font-family="monospace" font-size="11.5" font-weight="bold">PK,FK1</text>
+      <text x="608" y="258" fill="#F1F5F9" font-family="monospace" font-size="12">personagem_id</text>
+      <text x="890" y="258" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="550" y="290" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="bold">PK,FK2</text>
+      <text x="608" y="290" fill="#F1F5F9" font-family="monospace" font-size="12">item_id</text>
+      <text x="890" y="290" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+      <text x="550" y="322" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold">CHK</text>
+      <text x="608" y="322" fill="#F1F5F9" font-family="monospace" font-size="12">quantidade</text>
+      <text x="890" y="322" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER CHECK (&gt; 0)</text>
+    
+  <line x1="550" y1="346" x2="890" y2="346" stroke="#1E293B"/>
+  <text x="550" y="372" fill="#38BDF8" font-family="monospace" font-size="11">ON DELETE CASCADE em personagem_id</text>
+
+  <!-- Tabela itens -->
+  <rect x="1000" y="160" width="380" height="250" rx="10" fill="#11192B" stroke="#10B981" stroke-opacity="0.5"/>
+  <rect x="1000" y="160" width="380" height="44" rx="10" fill="#0F172A"/>
+  <rect x="1000" y="194" width="380" height="10" fill="#0F172A"/>
+  <text x="1020" y="188" fill="#34D399" font-family="monospace" font-size="16" font-weight="bold">itens</text>
+  <text x="1360" y="188" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">Catálogo</text>
+  <line x1="1000" y1="204" x2="1380" y2="204" stroke="#334155"/>
+
+  
+      <text x="1020" y="236" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="bold">PK</text>
+      <text x="1060" y="236" fill="#F1F5F9" font-family="monospace" font-size="12">id</text>
+      <text x="1360" y="236" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER AUTOINCREMENT</text>
+    
+      <text x="1020" y="268" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="bold">UQ</text>
+      <text x="1060" y="268" fill="#F1F5F9" font-family="monospace" font-size="12">nome</text>
+      <text x="1360" y="268" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">TEXT NOT NULL UNIQUE</text>
+    
+      <text x="1020" y="300" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="1060" y="300" fill="#F1F5F9" font-family="monospace" font-size="12">tipo</text>
+      <text x="1360" y="300" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">TEXT NOT NULL (Fábrica)</text>
+    
+      <text x="1020" y="332" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold">CHK</text>
+      <text x="1060" y="332" fill="#F1F5F9" font-family="monospace" font-size="12">preco</text>
+      <text x="1360" y="332" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER CHECK (&gt;= 0)</text>
+    
+      <text x="1020" y="364" fill="#CBD5E1" font-family="monospace" font-size="11.5" font-weight="bold"></text>
+      <text x="1060" y="364" fill="#F1F5F9" font-family="monospace" font-size="12">valor_efeito</text>
+      <text x="1360" y="364" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11">INTEGER NOT NULL</text>
+    
+
+  <!-- Crow's Foot Connectors -->
+  <!-- personagens (1) -- (0..N) inventario -->
+  <line x1="440" y1="254" x2="530" y2="254" stroke="#FBBF24" stroke-width="2"/>
+  <line x1="454" y1="244" x2="454" y2="264" stroke="#FBBF24" stroke-width="2"/>
+  <line x1="510" y1="254" x2="530" y2="244" stroke="#FBBF24" stroke-width="2"/>
+  <line x1="510" y1="254" x2="530" y2="264" stroke="#FBBF24" stroke-width="2"/>
+  <circle cx="504" cy="254" r="4.5" fill="#0B1120" stroke="#FBBF24" stroke-width="1.8"/>
+  <text x="485" y="238" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">1 : N</text>
+
+  <!-- inventario (0..N) -- (1) itens -->
+  <line x1="910" y1="286" x2="1000" y2="286" stroke="#34D399" stroke-width="2"/>
+  <line x1="930" y1="286" x2="910" y2="276" stroke="#34D399" stroke-width="2"/>
+  <line x1="930" y1="286" x2="910" y2="296" stroke="#34D399" stroke-width="2"/>
+  <circle cx="936" cy="286" r="4.5" fill="#0B1120" stroke="#34D399" stroke-width="1.8"/>
+  <line x1="986" y1="276" x2="986" y2="296" stroke="#34D399" stroke-width="2"/>
+  <text x="955" y="270" text-anchor="middle" fill="#6EE7B7" font-family="monospace" font-size="11">N : 1</text>
+
+  <!-- Nota de Regra -->
+  <rect x="60" y="555" width="1320" height="84" rx="10" fill="#11192B" stroke="#1E293B"/>
+  <text x="84" y="586" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Regras de Persistência &amp; Reidratação Polimórfica</text>
+  <text x="84" y="612" fill="#CBD5E1" font-family="monospace" font-size="12">1. Apenas subclasses com JOGAVEL = true são persistidas (Monstro nunca entra em personagens).</text>
+  <text x="84" y="630" fill="#CBD5E1" font-family="monospace" font-size="12">2. Ao carregar(nome), CLASSES_PERSONAGEM[classe] e TIPOS_ITEM[tipo] recriam as instâncias concretas exatas.</text>
+</svg>

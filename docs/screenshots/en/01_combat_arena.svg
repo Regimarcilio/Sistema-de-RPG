@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">RPG System</text>
+    
+      <text x="455" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Combat Arena</text>
+      <rect x="455" y="53" width="91.19999999999999" height="2" fill="#FBBF24"/>
+    
+      <text x="600" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Shop & Inventory</text>
+      
+    
+      <text x="765" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">SQLite Database</text>
+      
+    
+      <text x="915" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Tests & OOP</text>
+      
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Run PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Object-Oriented Architecture &amp; SQLite Persistence</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Domain layer with abstraction, encapsulation, inheritance, and polymorphism persisted in a 3NF relational schema.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Sound Effects Active</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="400" height="270" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="220" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Saved Heroes</text>
+  <text x="104" y="240" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Persisted in SQLite · 2 record(s)</text>
+  <rect x="366" y="200" width="94" height="30" rx="8" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.4"/>
+  <text x="413" y="220" text-anchor="middle" fill="#FCD34D" font-family="system-ui, sans-serif" font-size="12" font-weight="600">+ New Hero</text>
+
+  <rect x="104" y="264" width="38" height="38" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <text x="123" y="288" text-anchor="middle" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">W</text>
+  <text x="154" y="279" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Arthas</text>
+  <text x="154" y="298" fill="#94A3B8" font-family="monospace" font-size="11.5">Warrior · Lv 2 · HP 130/130 · 40 gold</text>
+  <line x1="104" y1="318" x2="456" y2="318" stroke="#1E293B"/>
+
+  <rect x="104" y="334" width="38" height="38" rx="8" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="123" y="358" text-anchor="middle" fill="#34D399" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">A</text>
+  <text x="154" y="349" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Legolas</text>
+  <text x="154" y="368" fill="#94A3B8" font-family="monospace" font-size="11.5">Archer · Lv 1 · HP 90/90 · 100 gold</text>
+
+  <rect x="80" y="476" width="400" height="210" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="510" fill="#F1F5F9" font-family="Georgia, serif" font-size="16" font-weight="bold">Field Inventory</text>
+  <text x="456" y="510" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2/10 units</text>
+  <text x="104" y="550" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13.5" font-weight="600">Small Health Potion</text>
+  <text x="104" y="568" fill="#94A3B8" font-family="monospace" font-size="11">HealthPotion · +30 effect · Qty 1</text>
+  <rect x="386" y="538" width="70" height="30" rx="8" fill="#1E293B"/>
+  <text x="421" y="558" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="12">Use</text>
+  <line x1="104" y1="586" x2="456" y2="586" stroke="#1E293B"/>
+  <text x="104" y="616" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13.5" font-weight="600">Mana Potion</text>
+  <text x="104" y="634" fill="#94A3B8" font-family="monospace" font-size="11">ManaPotion · +40 effect · Qty 1</text>
+  <rect x="386" y="604" width="70" height="30" rx="8" fill="#1E293B"/>
+  <text x="421" y="624" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="12">Use</text>
+
+  <rect x="504" y="186" width="856" height="145" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="528" y="218" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Arena Bestiary</text>
+  <text x="528" y="238" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Non-playable NPCs (PLAYABLE = false) to test turn-based combat and rewards</text>
+  <rect x="1174" y="200" width="162" height="30" rx="8" fill="#1E293B"/>
+  <text x="1255" y="220" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Summon New Opponent</text>
+
+  
+      <rect x="528" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="540" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Raider Goblin</text>
+      <text x="540" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Easy · HP 45 · Str 7</text>
+    
+      <rect x="732" y="256" width="192" height="58" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B"/>
+      <text x="744" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Savage Orc</text>
+      <text x="744" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Medium · HP 90 · Str 12</text>
+    
+      <rect x="936" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="948" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Dark Knight</text>
+      <text x="948" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Hard · HP 145 · Str 18</text>
+    
+      <rect x="1140" y="256" width="192" height="58" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <text x="1152" y="280" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Elder Dragon</text>
+      <text x="1152" y="300" fill="#94A3B8" font-family="monospace" font-size="11">Boss · HP 400 · Str 30</text>
+    
+
+  <rect x="504" y="352" width="856" height="316" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <rect x="528" y="376" width="392" height="214" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <rect x="548" y="396" width="44" height="44" rx="10" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <text x="570" y="424" text-anchor="middle" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">W</text>
+  <text x="604" y="414" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Arthas</text>
+  <text x="604" y="434" fill="#94A3B8" font-family="monospace" font-size="11.5">Warrior · Level 2 · In combat</text>
+
+  <text x="548" y="464" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Health (HP)</text>
+  <text x="900" y="464" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">130/130</text>
+  <rect x="548" y="472" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="472" width="352" height="8" rx="4" fill="#10B981"/>
+
+  <text x="548" y="502" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Mana (MP)</text>
+  <text x="900" y="502" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">25/35</text>
+  <rect x="548" y="510" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="510" width="250" height="8" rx="4" fill="#0EA5E9"/>
+
+  <text x="548" y="540" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Experience (XP)</text>
+  <text x="900" y="540" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">20/200</text>
+  <rect x="548" y="548" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="548" y="548" width="42" height="8" rx="4" fill="#F59E0B"/>
+  <text x="548" y="576" fill="#94A3B8" font-family="monospace" font-size="11.5">Strength: 17       Gold: 40          Special: 10 MP</text>
+
+  <rect x="944" y="376" width="392" height="214" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <rect x="964" y="396" width="44" height="44" rx="10" fill="#EF4444" fill-opacity="0.12" stroke="#EF4444" stroke-opacity="0.35"/>
+  <text x="986" y="424" text-anchor="middle" fill="#F87171" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">M</text>
+  <text x="1020" y="414" fill="#F1F5F9" font-family="Georgia, serif" font-size="18" font-weight="bold">Savage Orc</text>
+  <text x="1020" y="434" fill="#94A3B8" font-family="monospace" font-size="11.5">Monster NPC · Active</text>
+
+  <text x="964" y="464" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Monster Health (HP)</text>
+  <text x="1316" y="464" text-anchor="end" fill="#E2E8F0" font-family="monospace" font-size="12">56/90</text>
+  <rect x="964" y="472" width="352" height="8" rx="4" fill="#020617"/>
+  <rect x="964" y="472" width="218" height="8" rx="4" fill="#EF4444"/>
+  <text x="964" y="576" fill="#94A3B8" font-family="monospace" font-size="11.5">Strength: 12       Reward: +120 XP        +40 gold</text>
+
+  <line x1="528" y1="606" x2="1336" y2="606" stroke="#1E293B"/>
+  <rect x="528" y="618" width="134" height="36" rx="8" fill="#1E293B"/>
+  <text x="595" y="641" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Basic Attack</text>
+  <rect x="674" y="618" width="196" height="36" rx="8" fill="#F59E0B"/>
+  <text x="772" y="641" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Power Strike (10 MP)</text>
+  <rect x="1142" y="618" width="194" height="36" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="1239" y="641" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Resolve Full Combat</text>
+
+  <rect x="504" y="688" width="856" height="142" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="528" y="718" fill="#F1F5F9" font-family="Georgia, serif" font-size="16" font-weight="bold">Turn Log</text>
+  <text x="1336" y="718" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2 event(s)</text>
+  <rect x="528" y="734" width="808" height="80" rx="8" fill="#020617" stroke="#1E293B"/>
+  <text x="544" y="760" fill="#CBD5E1" font-family="monospace" font-size="12">Arthas uses Power Strike -&gt; 34 damage (monster HP 56)</text>
+  <text x="544" y="784" fill="#CBD5E1" font-family="monospace" font-size="12">Savage Orc attacks -&gt; 13 damage (hero HP 117)</text>
+
+</svg>

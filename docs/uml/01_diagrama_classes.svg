@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060">
+  <rect width="1600" height="1060" fill="#0B1120"/>
+  
+  <defs>
+    <!-- Hollow triangle for inheritance / realization -->
+    <marker id="inherit" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <polygon points="1,1 13,7 1,13" fill="#0B1120" stroke="#94A3B8" stroke-width="1.5"/>
+    </marker>
+    <!-- Solid arrow for association / sequence -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#F59E0B"/>
+    </marker>
+    <!-- Filled diamond for composition -->
+    <marker id="comp" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+    </marker>
+    <!-- Hollow diamond for aggregation -->
+    <marker id="aggr" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#0B1120" stroke="#38BDF8" stroke-width="1.3"/>
+    </marker>
+  </defs>
+
+
+  <text x="48" y="46" fill="#F8FAFC" font-family="Georgia, serif" font-size="24" font-weight="bold">Diagrama de Classes UML — Sistema de RPG</text>
+  <text x="48" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Hierarquia de domínio, interfaces, composição de inventário, serviços de combate/loja e persistência SQLite.</text>
+  <line x1="48" y1="86" x2="1552" y2="86" stroke="#1E293B"/>
+
+  <!-- Personagem (Abstract) -->
+  
+    <g>
+      <rect x="420" y="110" width="350" height="290" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="420" y="110" width="350" height="48" rx="8" fill="#0F172A"/>
+      <rect x="420" y="150" width="350" height="8" fill="#0F172A"/>
+      <line x1="420" y1="158" x2="770" y2="158" stroke="#334155" stroke-width="1"/>
+  <text x="595" y="127" text-anchor="middle" fill="#F59E0B" font-family="monospace" font-size="11">&lt;&lt;abstract&gt;&gt;</text><text x="595" y="146" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Personagem</text><text x="432" y="174" fill="#CBD5E1" font-family="monospace" font-size="11"># _nome: string</text><text x="432" y="191" fill="#CBD5E1" font-family="monospace" font-size="11"># _vidaMax, _vida: number</text><text x="432" y="208" fill="#CBD5E1" font-family="monospace" font-size="11"># _manaMax, _mana: number</text><text x="432" y="225" fill="#CBD5E1" font-family="monospace" font-size="11"># _forca, _xp, _nivel, _ouro: number</text><text x="432" y="242" fill="#CBD5E1" font-family="monospace" font-size="11"># _inventario: Inventario</text><text x="432" y="259" fill="#CBD5E1" font-family="monospace" font-size="11">+ JOGAVEL: boolean = true</text><line x1="420" y1="274" x2="770" y2="274" stroke="#1E293B" stroke-width="1"/><text x="432" y="292" fill="#93C5FD" font-family="monospace" font-size="11">+ atacar(alvo: Personagem)*: number</text><text x="432" y="309" fill="#93C5FD" font-family="monospace" font-size="11">+ habilidadeEspecial(alvo)*: number</text><text x="432" y="326" fill="#93C5FD" font-family="monospace" font-size="11">+ receberDano(dano: number): number</text><text x="432" y="343" fill="#93C5FD" font-family="monospace" font-size="11">+ curar(qtd: number): number</text><text x="432" y="360" fill="#93C5FD" font-family="monospace" font-size="11">+ ganharXp(qtd: number): boolean</text><text x="432" y="377" fill="#93C5FD" font-family="monospace" font-size="11">+ usarItem(nomeItem: string): string</text></g>
+
+  <!-- Subclasses de Personagem -->
+  
+    <g>
+      <rect x="40" y="470" width="230" height="126" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="40" y="470" width="230" height="34" rx="8" fill="#0F172A"/>
+      <rect x="40" y="496" width="230" height="8" fill="#0F172A"/>
+      <line x1="40" y1="504" x2="270" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="155" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Guerreiro</text><text x="52" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">+ CUSTO_ESPECIAL = 10</text><text x="52" y="537" fill="#CBD5E1" font-family="monospace" font-size="11">+ HP 120 · MP 30 · For 15</text><line x1="40" y1="552" x2="270" y2="552" stroke="#1E293B" stroke-width="1"/><text x="52" y="570" fill="#93C5FD" font-family="monospace" font-size="11">+ atacar(alvo): number</text><text x="52" y="587" fill="#93C5FD" font-family="monospace" font-size="11">+ habilidadeEspecial(alvo)</text></g>
+  
+    <g>
+      <rect x="290" y="470" width="230" height="126" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="290" y="470" width="230" height="34" rx="8" fill="#0F172A"/>
+      <rect x="290" y="496" width="230" height="8" fill="#0F172A"/>
+      <line x1="290" y1="504" x2="520" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="405" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Mago</text><text x="302" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">+ CUSTO_ESPECIAL = 20</text><text x="302" y="537" fill="#CBD5E1" font-family="monospace" font-size="11">+ HP 70 · MP 100 · For 6</text><line x1="290" y1="552" x2="520" y2="552" stroke="#1E293B" stroke-width="1"/><text x="302" y="570" fill="#93C5FD" font-family="monospace" font-size="11">+ atacar(alvo): number</text><text x="302" y="587" fill="#93C5FD" font-family="monospace" font-size="11">+ habilidadeEspecial(alvo)</text></g>
+  
+    <g>
+      <rect x="540" y="470" width="230" height="126" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="540" y="470" width="230" height="34" rx="8" fill="#0F172A"/>
+      <rect x="540" y="496" width="230" height="8" fill="#0F172A"/>
+      <line x1="540" y1="504" x2="770" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="655" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Arqueiro</text><text x="552" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">+ CUSTO_ESPECIAL = 12</text><text x="552" y="537" fill="#CBD5E1" font-family="monospace" font-size="11">+ HP 90 · MP 50 · For 11</text><line x1="540" y1="552" x2="770" y2="552" stroke="#1E293B" stroke-width="1"/><text x="552" y="570" fill="#93C5FD" font-family="monospace" font-size="11">+ atacar(alvo): number</text><text x="552" y="587" fill="#93C5FD" font-family="monospace" font-size="11">+ habilidadeEspecial(alvo)</text></g>
+  
+    <g>
+      <rect x="790" y="470" width="240" height="144" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="790" y="470" width="240" height="34" rx="8" fill="#0F172A"/>
+      <rect x="790" y="496" width="240" height="8" fill="#0F172A"/>
+      <line x1="790" y1="504" x2="1030" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="910" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Monstro</text><text x="802" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">+ JOGAVEL = false</text><text x="802" y="537" fill="#CBD5E1" font-family="monospace" font-size="11">+ recompensaXp: number</text><text x="802" y="554" fill="#CBD5E1" font-family="monospace" font-size="11">+ recompensaOuro: number</text><line x1="790" y1="569" x2="1030" y2="569" stroke="#1E293B" stroke-width="1"/><text x="802" y="587" fill="#93C5FD" font-family="monospace" font-size="11">+ atacar(alvo): number</text><text x="802" y="604" fill="#93C5FD" font-family="monospace" font-size="11">+ habilidadeEspecial(alvo)</text></g>
+
+  <!-- Heranca Personagem -->
+  <path d="M 155 470 L 155 435 L 595 435 L 595 400" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#inherit)"/>
+  <path d="M 405 470 L 405 435" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <path d="M 655 470 L 655 435" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <path d="M 910 470 L 910 435 L 595 435" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Inventario -->
+  
+    <g>
+      <rect x="40" y="145" width="290" height="175" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="40" y="145" width="290" height="34" rx="8" fill="#0F172A"/>
+      <rect x="40" y="171" width="290" height="8" fill="#0F172A"/>
+      <line x1="40" y1="179" x2="330" y2="179" stroke="#334155" stroke-width="1"/>
+  <text x="185" y="167" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Inventario</text><text x="52" y="195" fill="#CBD5E1" font-family="monospace" font-size="11">- _capacidade: number</text><text x="52" y="212" fill="#CBD5E1" font-family="monospace" font-size="11">- _itens: Map&lt;string, [Item, int]&gt;</text><line x1="40" y1="227" x2="330" y2="227" stroke="#1E293B" stroke-width="1"/><text x="52" y="245" fill="#93C5FD" font-family="monospace" font-size="11">+ adicionar(item, qtd): void</text><text x="52" y="262" fill="#93C5FD" font-family="monospace" font-size="11">+ obter(nome: string): Item</text><text x="52" y="279" fill="#93C5FD" font-family="monospace" font-size="11">+ remover(nome: string): Item</text><text x="52" y="296" fill="#93C5FD" font-family="monospace" font-size="11">+ listar(): ItemQuantidade[]</text></g>
+
+  <!-- Composicao Personagem -> Inventario -->
+  <line x1="420" y1="230" x2="330" y2="230" stroke="#F59E0B" stroke-width="1.6" marker-start="url(#comp)"/>
+  <text x="404" y="220" fill="#FCD34D" font-family="monospace" font-size="11">1</text>
+  <text x="340" y="220" fill="#FCD34D" font-family="monospace" font-size="11">1</text>
+
+  <!-- IUsavel & Item -->
+  
+    <g>
+      <rect x="1140" y="110" width="320" height="88" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1140" y="110" width="320" height="48" rx="8" fill="#0F172A"/>
+      <rect x="1140" y="150" width="320" height="8" fill="#0F172A"/>
+      <line x1="1140" y1="158" x2="1460" y2="158" stroke="#334155" stroke-width="1"/>
+  <text x="1300" y="127" text-anchor="middle" fill="#38BDF8" font-family="monospace" font-size="11">&lt;&lt;interface&gt;&gt;</text><text x="1300" y="146" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">IUsavel</text><line x1="1140" y1="166" x2="1460" y2="166" stroke="#1E293B" stroke-width="1"/><text x="1152" y="184" fill="#93C5FD" font-family="monospace" font-size="11">+ usar(alvo: Personagem): string</text></g>
+  
+    <g>
+      <rect x="1140" y="235" width="320" height="145" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1140" y="235" width="320" height="48" rx="8" fill="#0F172A"/>
+      <rect x="1140" y="275" width="320" height="8" fill="#0F172A"/>
+      <line x1="1140" y1="283" x2="1460" y2="283" stroke="#334155" stroke-width="1"/>
+  <text x="1300" y="252" text-anchor="middle" fill="#F59E0B" font-family="monospace" font-size="11">&lt;&lt;abstract&gt;&gt;</text><text x="1300" y="271" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Item</text><text x="1152" y="299" fill="#CBD5E1" font-family="monospace" font-size="11"># _nome: string</text><text x="1152" y="316" fill="#CBD5E1" font-family="monospace" font-size="11"># _preco: number</text><text x="1152" y="333" fill="#CBD5E1" font-family="monospace" font-size="11"># _valorEfeito: number</text><text x="1152" y="350" fill="#CBD5E1" font-family="monospace" font-size="11">+ TIPO: string</text><line x1="1140" y1="365" x2="1460" y2="365" stroke="#1E293B" stroke-width="1"/><text x="1152" y="383" fill="#93C5FD" font-family="monospace" font-size="11">+ usar(alvo: Personagem)*: string</text></g>
+
+  <!-- Realizacao Item ..|> IUsavel -->
+  <line x1="1300" y1="235" x2="1300" y2="198" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#inherit)"/>
+
+  <!-- Agregacao Inventario -> Item -->
+  <path d="M 185 145 L 185 95 L 1110 95 L 1110 305 L 1140 305" fill="none" stroke="#38BDF8" stroke-width="1.4" marker-start="url(#aggr)"/>
+  <text x="195" y="132" fill="#38BDF8" font-family="monospace" font-size="11">1</text>
+  <text x="1114" y="295" fill="#38BDF8" font-family="monospace" font-size="11">0..*</text>
+
+  <!-- Subclasses Item -->
+  
+    <g>
+      <rect x="1070" y="470" width="155" height="96" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1070" y="470" width="155" height="34" rx="8" fill="#0F172A"/>
+      <rect x="1070" y="496" width="155" height="8" fill="#0F172A"/>
+      <line x1="1070" y1="504" x2="1225" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="1147.5" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">PocaoVida</text><text x="1082" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">TIPO="PocaoVida"</text><line x1="1070" y1="535" x2="1225" y2="535" stroke="#1E293B" stroke-width="1"/><text x="1082" y="553" fill="#93C5FD" font-family="monospace" font-size="11">+ usar(alvo)</text></g>
+  
+    <g>
+      <rect x="1240" y="470" width="155" height="96" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1240" y="470" width="155" height="34" rx="8" fill="#0F172A"/>
+      <rect x="1240" y="496" width="155" height="8" fill="#0F172A"/>
+      <line x1="1240" y1="504" x2="1395" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="1317.5" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">PocaoMana</text><text x="1252" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">TIPO="PocaoMana"</text><line x1="1240" y1="535" x2="1395" y2="535" stroke="#1E293B" stroke-width="1"/><text x="1252" y="553" fill="#93C5FD" font-family="monospace" font-size="11">+ usar(alvo)</text></g>
+  
+    <g>
+      <rect x="1410" y="470" width="155" height="96" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1410" y="470" width="155" height="34" rx="8" fill="#0F172A"/>
+      <rect x="1410" y="496" width="155" height="8" fill="#0F172A"/>
+      <line x1="1410" y1="504" x2="1565" y2="504" stroke="#334155" stroke-width="1"/>
+  <text x="1487.5" y="492" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">ElixirXP</text><text x="1422" y="520" fill="#CBD5E1" font-family="monospace" font-size="11">TIPO="ElixirXP"</text><line x1="1410" y1="535" x2="1565" y2="535" stroke="#1E293B" stroke-width="1"/><text x="1422" y="553" fill="#93C5FD" font-family="monospace" font-size="11">+ usar(alvo)</text></g>
+
+  <path d="M 1147 470 L 1147 425 L 1300 425 L 1300 380" fill="none" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#inherit)"/>
+  <path d="M 1317 470 L 1317 425" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <path d="M 1487 470 L 1487 425 L 1300 425" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Servicos & Persistencia (Linha Inferior) -->
+  
+    <g>
+      <rect x="40" y="680" width="350" height="155" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="40" y="680" width="350" height="34" rx="8" fill="#0F172A"/>
+      <rect x="40" y="706" width="350" height="8" fill="#0F172A"/>
+      <line x1="40" y1="714" x2="390" y2="714" stroke="#334155" stroke-width="1"/>
+  <text x="215" y="702" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Combate</text><text x="52" y="730" fill="#CBD5E1" font-family="monospace" font-size="11">+ heroi: Personagem</text><text x="52" y="747" fill="#CBD5E1" font-family="monospace" font-size="11">+ monstro: Monstro</text><text x="52" y="764" fill="#CBD5E1" font-family="monospace" font-size="11">+ log: string[]</text><line x1="40" y1="779" x2="390" y2="779" stroke="#1E293B" stroke-width="1"/><text x="52" y="797" fill="#93C5FD" font-family="monospace" font-size="11">+ executar(): boolean</text><text x="52" y="814" fill="#93C5FD" font-family="monospace" font-size="11">+ executarTurno(acao): ResultadoTurno</text></g>
+  
+    <g>
+      <rect x="430" y="680" width="340" height="140" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="430" y="680" width="340" height="34" rx="8" fill="#0F172A"/>
+      <rect x="430" y="706" width="340" height="8" fill="#0F172A"/>
+      <line x1="430" y1="714" x2="770" y2="714" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="702" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Loja</text><text x="442" y="730" fill="#CBD5E1" font-family="monospace" font-size="11">- _catalogo: Map&lt;string, Item&gt;</text><line x1="430" y1="745" x2="770" y2="745" stroke="#1E293B" stroke-width="1"/><text x="442" y="763" fill="#93C5FD" font-family="monospace" font-size="11">+ listar(): Item[]</text><text x="442" y="780" fill="#93C5FD" font-family="monospace" font-size="11">+ comprar(comprador, nomeItem): Item</text></g>
+  
+    <g>
+      <rect x="810" y="680" width="390" height="175" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="810" y="680" width="390" height="34" rx="8" fill="#0F172A"/>
+      <rect x="810" y="706" width="390" height="8" fill="#0F172A"/>
+      <line x1="810" y1="714" x2="1200" y2="714" stroke="#334155" stroke-width="1"/>
+  <text x="1005" y="702" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">RepositorioRPG</text><text x="822" y="730" fill="#CBD5E1" font-family="monospace" font-size="11">+ conn: DatabaseSync (SQLite)</text><line x1="810" y1="745" x2="1200" y2="745" stroke="#1E293B" stroke-width="1"/><text x="822" y="763" fill="#93C5FD" font-family="monospace" font-size="11">+ semearItens(catalogo): void</text><text x="822" y="780" fill="#93C5FD" font-family="monospace" font-size="11">+ salvar(p: Personagem): void</text><text x="822" y="797" fill="#93C5FD" font-family="monospace" font-size="11">+ carregar(nome: string): Personagem</text><text x="822" y="814" fill="#93C5FD" font-family="monospace" font-size="11">+ excluir(nome: string): void</text><text x="822" y="831" fill="#93C5FD" font-family="monospace" font-size="11">+ inspecionarTabelas(): InspecaoBanco</text></g>
+  
+    <g>
+      <rect x="1240" y="680" width="320" height="175" rx="8" fill="#11192B" stroke="#334155" stroke-width="1.2"/>
+      <rect x="1240" y="680" width="320" height="48" rx="8" fill="#0F172A"/>
+      <rect x="1240" y="720" width="320" height="8" fill="#0F172A"/>
+      <line x1="1240" y1="728" x2="1560" y2="728" stroke="#334155" stroke-width="1"/>
+  <text x="1400" y="697" text-anchor="middle" fill="#EF4444" font-family="monospace" font-size="11">&lt;&lt;exceptions&gt;&gt;</text><text x="1400" y="716" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">RPGError</text><text x="1252" y="744" fill="#CBD5E1" font-family="monospace" font-size="11">InventarioCheioError</text><text x="1252" y="761" fill="#CBD5E1" font-family="monospace" font-size="11">OuroInsuficienteError</text><text x="1252" y="778" fill="#CBD5E1" font-family="monospace" font-size="11">ItemNaoEncontradoError</text><text x="1252" y="795" fill="#CBD5E1" font-family="monospace" font-size="11">ManaInsuficienteError</text><text x="1252" y="812" fill="#CBD5E1" font-family="monospace" font-size="11">PersonagemMortoError</text><text x="1252" y="829" fill="#CBD5E1" font-family="monospace" font-size="11">ValorInvalidoError</text><text x="1252" y="846" fill="#CBD5E1" font-family="monospace" font-size="11">PersonagemJaExisteError</text><text x="1252" y="863" fill="#CBD5E1" font-family="monospace" font-size="11">CombateInvalidoError</text></g>
+
+  <!-- Associacoes inferiores -->
+  <path d="M 215 680 L 215 640 L 890 640 L 890 614" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="225" y="660" fill="#94A3B8" font-family="monospace" font-size="11">heroi / monstro</text>
+  <path d="M 600 680 L 600 652 L 1300 652 L 1300 566" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="610" y="668" fill="#94A3B8" font-family="monospace" font-size="11">vende Item</text>
+
+  <!-- Legenda -->
+  <rect x="40" y="900" width="1520" height="110" rx="10" fill="#11192B" stroke="#1E293B"/>
+  <text x="64" y="932" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Legenda UML &amp; Pilares de POO</text>
+  <line x1="64" y1="964" x2="124" y2="964" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#inherit)"/>
+  <text x="136" y="968" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Herança (--|&gt;)</text>
+
+  <line x1="280" y1="964" x2="340" y2="964" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#inherit)"/>
+  <text x="352" y="968" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Implementação de Interface (..|&gt;)</text>
+
+  <line x1="590" y1="964" x2="650" y2="964" stroke="#F59E0B" stroke-width="1.6" marker-start="url(#comp)"/>
+  <text x="662" y="968" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Composição (*--)</text>
+
+  <line x1="820" y1="964" x2="880" y2="964" stroke="#38BDF8" stroke-width="1.5" marker-start="url(#aggr)"/>
+  <text x="892" y="968" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Agregação (o--)</text>
+
+  <line x1="1040" y1="964" x2="1100" y2="964" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="1112" y="968" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12">Dependência / Associação</text>
+
+  <text x="64" y="994" fill="#94A3B8" font-family="monospace" font-size="11.5">Visibilidade:  + public   # protected   - private   * abstract method</text>
+</svg>

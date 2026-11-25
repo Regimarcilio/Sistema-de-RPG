@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Play, XCircle } from 'lucide-react';
 import type { ResultadoTeste } from '../types/api.ts';
+import { UmlDiagramsPanel } from './UmlDiagramsPanel.tsx';
 
 interface ArchitectureTestsViewProps {
   resultadosTestes: ResultadoTeste[];
@@ -291,6 +292,9 @@ export const ArchitectureTestsView: React.FC<ArchitectureTestsViewProps> = ({
           </div>
         </div>
       </section>
+
+      {/* Diagramas UML Visuais */}
+      <UmlDiagramsPanel />
     </div>
   );
 };

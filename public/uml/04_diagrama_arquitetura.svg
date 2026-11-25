@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660">
+  <rect width="1440" height="660" fill="#0B1120"/>
+  
+  <defs>
+    <!-- Hollow triangle for inheritance / realization -->
+    <marker id="inherit" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <polygon points="1,1 13,7 1,13" fill="#0B1120" stroke="#94A3B8" stroke-width="1.5"/>
+    </marker>
+    <!-- Solid arrow for association / sequence -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#F59E0B"/>
+    </marker>
+    <!-- Filled diamond for composition -->
+    <marker id="comp" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+    </marker>
+    <!-- Hollow diamond for aggregation -->
+    <marker id="aggr" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#0B1120" stroke="#38BDF8" stroke-width="1.3"/>
+    </marker>
+  </defs>
+
+  <text x="48" y="46" fill="#F8FAFC" font-family="Georgia, serif" font-size="24" font-weight="bold">Diagrama de Componentes e Arquitetura em Camadas</text>
+  <text x="48" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Fluxo de dependências estrito: Apresentação -&gt; Aplicação (API REST) -&gt; Domínio (POO) -&gt; Persistência (SQLite).</text>
+  <line x1="48" y1="86" x2="1392" y2="86" stroke="#1E293B"/>
+
+  
+    <rect x="60" y="118" width="1320" height="96" rx="10" fill="#11192B" stroke="#38BDF8" stroke-opacity="0.45"/>
+    <text x="84" y="146" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Camada de Apresentação (React + TypeScript)</text>
+    
+        <rect x="84" y="160" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="234" y="184" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">ArenaView (Combate &amp; Heróis)</text>
+      
+        <rect x="400" y="160" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="550" y="184" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">ShopInventoryView (Loja &amp; Exceções)</text>
+      
+        <rect x="716" y="160" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="866" y="184" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">DatabaseView (Inspeção 3FN)</text>
+      
+        <rect x="1032" y="160" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="1182" y="184" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">ArchitectureTestsView (11 Testes &amp; UML)</text>
+      
+    <line x1="720" y1="214" x2="720" y2="250" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  
+    <rect x="60" y="250" width="1320" height="96" rx="10" fill="#11192B" stroke="#F59E0B" stroke-opacity="0.45"/>
+    <text x="84" y="278" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Camada de Aplicação / API REST (server.ts — Express)</text>
+    
+        <rect x="84" y="292" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="234" y="316" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">GET /api/estado</text>
+      
+        <rect x="400" y="292" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="550" y="316" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">POST /api/personagens &amp; DELETE</text>
+      
+        <rect x="716" y="292" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="866" y="316" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">POST /api/loja/comprar &amp; usar-item</text>
+      
+        <rect x="1032" y="292" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="1182" y="316" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">POST /api/combate/*, /api/poc &amp; /api/testes</text>
+      
+    <line x1="720" y1="346" x2="720" y2="382" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  
+    <rect x="60" y="382" width="1320" height="96" rx="10" fill="#11192B" stroke="#10B981" stroke-opacity="0.45"/>
+    <text x="84" y="410" fill="#10B981" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Camada de Domínio (src/domain/rpg.ts — POO Puro)</text>
+    
+        <rect x="84" y="424" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="234" y="448" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">Personagem (Guerreiro, Mago, Arqueiro, Monstro)</text>
+      
+        <rect x="400" y="424" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="550" y="448" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">IUsavel / Item (PocaoVida, PocaoMana, ElixirXP)</text>
+      
+        <rect x="716" y="424" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="866" y="448" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">Inventario, Combate &amp; Loja</text>
+      
+        <rect x="1032" y="424" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="1182" y="448" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">Exceções de Domínio (RPGError)</text>
+      
+    <line x1="720" y1="478" x2="720" y2="514" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  
+    <rect x="60" y="514" width="1320" height="96" rx="10" fill="#11192B" stroke="#A78BFA" stroke-opacity="0.45"/>
+    <text x="84" y="542" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Camada de Persistência (src/server/repositorio.ts — SQLite)</text>
+    
+        <rect x="84" y="556" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="234" y="580" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">RepositorioRPG (CRUD &amp; Transações)</text>
+      
+        <rect x="400" y="556" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="550" y="580" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">node:sqlite (DatabaseSync)</text>
+      
+        <rect x="716" y="556" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="866" y="580" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">rpg.db (Arquivo Persistente 3FN)</text>
+      
+        <rect x="1032" y="556" width="300" height="38" rx="6" fill="#0F172A" stroke="#1E293B"/>
+        <text x="1182" y="580" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11.5">:memory: (Execução dos 11 Testes)</text>
+      
+    
+  
+</svg>

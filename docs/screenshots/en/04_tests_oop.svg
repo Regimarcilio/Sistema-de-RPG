@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">RPG System</text>
+    
+      <text x="455" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Combat Arena</text>
+      
+    
+      <text x="600" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Shop & Inventory</text>
+      
+    
+      <text x="765" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">SQLite Database</text>
+      
+    
+      <text x="915" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Tests & OOP</text>
+      <rect x="915" y="53" width="83.6" height="2" fill="#FBBF24"/>
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Run PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Object-Oriented Architecture &amp; SQLite Persistence</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Domain layer with abstraction, encapsulation, inheritance, and polymorphism persisted in a 3NF relational schema.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Sound Effects Active</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="1280" height="456" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="222" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Automated Domain &amp; SQLite Tests</text>
+  <text x="104" y="244" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">11 edge-case scenarios executed against an isolated :memory: SQLite database without altering rpg.db.</text>
+  <text x="1166" y="226" text-anchor="end" fill="#34D399" font-family="monospace" font-size="13.5" font-weight="bold">11/11 passed</text>
+  <rect x="1186" y="202" width="150" height="34" rx="8" fill="#F59E0B"/>
+  <text x="1261" y="224" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Run 11 Tests</text>
+
+  <rect x="104" y="264" width="1232" height="354" rx="10" fill="#090E1B" stroke="#1E293B"/>
+  
+      <circle cx="126" cy="286" r="5" fill="#10B981"/>
+      <text x="142" y="290" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">potion_preserved_on_failed_use</text>
+      <text x="530" y="290" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Atomic item consumption</text>
+      <text x="1238" y="290" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="290" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.18 ms</text>
+      <line x1="104" y1="300" x2="1336" y2="300" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="317" r="5" fill="#10B981"/>
+      <text x="142" y="321" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">invalid_values_are_rejected</text>
+      <text x="530" y="321" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Strict positive integer validation</text>
+      <text x="1238" y="321" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="321" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.12 ms</text>
+      <line x1="104" y1="331" x2="1336" y2="331" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="348" r="5" fill="#10B981"/>
+      <text x="142" y="352" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">monster_is_not_persisted</text>
+      <text x="530" y="352" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Playable vs NPC persistence guard</text>
+      <text x="1238" y="352" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="352" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.84 ms</text>
+      <line x1="104" y1="362" x2="1336" y2="362" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="379" r="5" fill="#10B981"/>
+      <text x="142" y="383" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">inventory_capacity_persists</text>
+      <text x="530" y="383" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Hydration state fidelity</text>
+      <text x="1238" y="383" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="383" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.72 ms</text>
+      <line x1="104" y1="393" x2="1336" y2="393" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="410" r="5" fill="#10B981"/>
+      <text x="142" y="414" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">unknown_item_auto_registered</text>
+      <text x="530" y="414" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Automatic referential integrity</text>
+      <text x="1238" y="414" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="414" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.91 ms</text>
+      <line x1="104" y1="424" x2="1336" y2="424" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="441" r="5" fill="#10B981"/>
+      <text x="142" y="445" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">duplicate_name_different_class_rejected</text>
+      <text x="530" y="445" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Semantic uniqueness per name and class</text>
+      <text x="1238" y="445" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="445" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.68 ms</text>
+      <line x1="104" y1="455" x2="1336" y2="455" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="472" r="5" fill="#10B981"/>
+      <text x="142" y="476" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">ids_remain_sequential_after_saves</text>
+      <text x="530" y="476" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Primary key efficiency</text>
+      <text x="1238" y="476" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="476" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.77 ms</text>
+      <line x1="104" y1="486" x2="1336" y2="486" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="503" r="5" fill="#10B981"/>
+      <text x="142" y="507" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">defeated_monster_cannot_fight_again</text>
+      <text x="530" y="507" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Combat precondition guard</text>
+      <text x="1238" y="507" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="507" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.09 ms</text>
+      <line x1="104" y1="517" x2="1336" y2="517" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="534" r="5" fill="#10B981"/>
+      <text x="142" y="538" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">shop_does_not_charge_when_full</text>
+      <text x="530" y="538" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Safe shop transaction ordering</text>
+      <text x="1238" y="538" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="538" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.11 ms</text>
+      <line x1="104" y1="548" x2="1336" y2="548" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="565" r="5" fill="#10B981"/>
+      <text x="142" y="569" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">save_and_load_preserves_state_and_type</text>
+      <text x="530" y="569" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Polymorphism + 3NF persistence</text>
+      <text x="1238" y="569" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="569" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.88 ms</text>
+      <line x1="104" y1="579" x2="1336" y2="579" stroke="#1E293B" stroke-opacity="0.7"/>
+    
+      <circle cx="126" cy="596" r="5" fill="#10B981"/>
+      <text x="142" y="600" fill="#F1F5F9" font-family="monospace" font-size="12" font-weight="600">delete_cascades_inventory_rows</text>
+      <text x="530" y="600" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">· Referential integrity (FK Cascade)</text>
+      <text x="1238" y="600" text-anchor="end" fill="#34D399" font-family="monospace" font-size="12" font-weight="600">Passed</text>
+      <text x="1314" y="600" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11.5">0.79 ms</text>
+      
+    
+
+  <text x="80" y="678" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">The 4 Pillars of OOP in This Project</text>
+  
+      <rect x="80" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="100" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Abstraction</text>
+      <text x="100" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Personagem, Item, and IUsavel define</text>
+      <text x="100" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">minimal contracts hiding internals.</text>
+    
+      <rect x="405" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="425" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Encapsulation</text>
+      <text x="425" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Health, mana, XP, gold, and capacity</text>
+      <text x="425" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">mutate only via validating methods.</text>
+    
+      <rect x="730" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="750" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Inheritance</text>
+      <text x="750" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">Warrior, Mage, Archer, and Monster</text>
+      <text x="750" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">extend Personagem; potions extend Item.</text>
+    
+      <rect x="1055" y="698" width="305" height="128" rx="12" fill="#11192B" stroke="#1E293B"/>
+      <text x="1075" y="732" fill="#FBBF24" font-family="Georgia, serif" font-size="16" font-weight="bold">Polymorphism</text>
+      <text x="1075" y="764" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">attack(), specialAbility(), and use()</text>
+      <text x="1075" y="784" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12.5">vary per subclass at runtime.</text>
+    
+
+</svg>

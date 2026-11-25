@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="920" viewBox="0 0 1540 920">
+  <rect width="1540" height="920" fill="#0B1120"/>
+  
+  <defs>
+    <!-- Hollow triangle for inheritance / realization -->
+    <marker id="inherit" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <polygon points="1,1 13,7 1,13" fill="#0B1120" stroke="#94A3B8" stroke-width="1.5"/>
+    </marker>
+    <!-- Solid arrow for association / sequence -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#F59E0B"/>
+    </marker>
+    <!-- Filled diamond for composition -->
+    <marker id="comp" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+    </marker>
+    <!-- Hollow diamond for aggregation -->
+    <marker id="aggr" viewBox="0 0 16 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto">
+      <polygon points="1,5 8,1 15,5 8,9" fill="#0B1120" stroke="#38BDF8" stroke-width="1.3"/>
+    </marker>
+  </defs>
+
+
+  <text x="48" y="46" fill="#F8FAFC" font-family="Georgia, serif" font-size="24" font-weight="bold">Diagrama de Sequência UML — Compra, Combate e Persistência</text>
+  <text x="48" y="70" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Fluxo completo das transações seguras da Loja, ciclo de combate por turnos e commit atômico no SQLite.</text>
+  <line x1="48" y1="86" x2="1492" y2="86" stroke="#1E293B"/>
+
+  <!-- Lifelines -->
+  
+    <rect x="50" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="140" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">Jogador / UI</text>
+    <text x="140" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">Interface Web</text>
+    <line x1="140" y1="162" x2="140" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+    <rect x="300" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="390" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">Loja</text>
+    <text x="390" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">Serviço</text>
+    <line x1="390" y1="162" x2="390" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+    <rect x="550" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="640" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">Heroi</text>
+    <text x="640" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">Guerreiro</text>
+    <line x1="640" y1="162" x2="640" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+    <rect x="800" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="890" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">Combate</text>
+    <text x="890" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">Orquestrador</text>
+    <line x1="890" y1="162" x2="890" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+    <rect x="1050" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="1140" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">Monstro</text>
+    <text x="1140" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">NPC (JOGAVEL=false)</text>
+    <line x1="1140" y1="162" x2="1140" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+    <rect x="1300" y="110" width="180" height="52" rx="8" fill="#11192B" stroke="#334155"/>
+    <text x="1390" y="133" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13.5" font-weight="bold">RepositorioRPG</text>
+    <text x="1390" y="150" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">SQLite (rpg.db)</text>
+    <line x1="1390" y1="162" x2="1390" y2="870" stroke="#334155" stroke-width="1.2" stroke-dasharray="6,5"/>
+  
+
+  <!-- Fase 1: Compra -->
+  <rect x="44" y="180" width="1440" height="190" rx="8" fill="#11192B" fill-opacity="0.35" stroke="#1E293B"/>
+  <rect x="44" y="180" width="210" height="24" rx="4" fill="#1E293B"/>
+  <text x="54" y="196" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="bold">1. Compra Segura na Loja</text>
+
+  
+    <line x1="140" y1="226" x2="390" y2="226" stroke="#F59E0B" stroke-width="1.5"  marker-end="url(#arrow-amber)"/>
+    <rect x="164.60000000000002" y="207" width="200.79999999999998" height="16" rx="4" fill="#0B1120"/>
+    <text x="265" y="219" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">comprar(heroi, "Poção Vida")</text>
+  
+  
+    <line x1="390" y1="260" x2="640" y2="260" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="421.2" y="241" width="187.6" height="16" rx="4" fill="#0B1120"/>
+    <text x="515" y="253" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">verificar capacidade < max</text>
+  
+  
+    <line x1="390" y1="292" x2="640" y2="292" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="371.70000000000005" y="273" width="286.59999999999997" height="16" rx="4" fill="#0B1120"/>
+    <text x="515" y="285" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">gastarOuro(50) [ou OuroInsuficienteError]</text>
+  
+  
+    <line x1="390" y1="324" x2="640" y2="324" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="421.2" y="305" width="187.6" height="16" rx="4" fill="#0B1120"/>
+    <text x="515" y="317" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">inventario.adicionar(item)</text>
+  
+  
+    <line x1="140" y1="354" x2="1390" y2="354" stroke="#F59E0B" stroke-width="1.5"  marker-end="url(#arrow-amber)"/>
+    <rect x="651.4" y="335" width="227.2" height="16" rx="4" fill="#0B1120"/>
+    <text x="765" y="347" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">salvar(heroi) [BEGIN ... COMMIT]</text>
+  
+
+  <!-- Fase 2: Combate -->
+  <rect x="44" y="388" width="1440" height="276" rx="8" fill="#11192B" fill-opacity="0.35" stroke="#1E293B"/>
+  <rect x="44" y="388" width="235" height="24" rx="4" fill="#1E293B"/>
+  <text x="54" y="404" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="bold">2. Ciclo de Combate por Turnos</text>
+
+  
+    <line x1="140" y1="434" x2="890" y2="434" stroke="#F59E0B" stroke-width="1.5"  marker-end="url(#arrow-amber)"/>
+    <rect x="424.5" y="415" width="181" height="16" rx="4" fill="#0B1120"/>
+    <text x="515" y="427" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">executarTurno("especial")</text>
+  
+  
+    <line x1="890" y1="468" x2="640" y2="468" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="667.9" y="449" width="194.2" height="16" rx="4" fill="#0B1120"/>
+    <text x="765" y="461" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">habilidadeEspecial(monstro)</text>
+  
+  
+    <line x1="640" y1="500" x2="1140" y2="500" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="809.4" y="481" width="161.2" height="16" rx="4" fill="#0B1120"/>
+    <text x="890" y="493" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">receberDano(forca * 2)</text>
+  
+  
+    <line x1="1140" y1="532" x2="890" y2="532" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+    <rect x="941" y="513" width="148" height="16" rx="4" fill="#0B1120"/>
+    <text x="1015" y="525" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">retorna dano causado</text>
+  
+
+  <!-- Alt frame -->
+  <rect x="560" y="548" width="660" height="68" rx="6" fill="none" stroke="#475569" stroke-dasharray="4,3"/>
+  <text x="572" y="564" fill="#94A3B8" font-family="monospace" font-size="10.5">[alt monstro.vivo == true]</text>
+  
+    <line x1="1140" y1="588" x2="640" y2="588" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="769.8" y="569" width="240.39999999999998" height="16" rx="4" fill="#0B1120"/>
+    <text x="890" y="581" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">atacar(heroi) -> receberDano(dano)</text>
+  
+
+  <text x="572" y="636" fill="#34D399" font-family="monospace" font-size="10.5">[else monstro derrotado]</text>
+  
+    <line x1="890" y1="650" x2="640" y2="650" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="658" y="631" width="214" height="16" rx="4" fill="#0B1120"/>
+    <text x="765" y="643" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">ganharXp(120) + ganharOuro(40)</text>
+  
+
+  <!-- Fase 3: Uso de Item & Persistencia -->
+  <rect x="44" y="682" width="1440" height="175" rx="8" fill="#11192B" fill-opacity="0.35" stroke="#1E293B"/>
+  <rect x="44" y="682" width="295" height="24" rx="4" fill="#1E293B"/>
+  <text x="54" y="698" fill="#34D399" font-family="monospace" font-size="11" font-weight="bold">3. Uso Atômico de Item &amp; Persistência</text>
+
+  
+    <line x1="140" y1="728" x2="640" y2="728" stroke="#F59E0B" stroke-width="1.5"  marker-end="url(#arrow-amber)"/>
+    <rect x="276.4" y="709" width="227.2" height="16" rx="4" fill="#0B1120"/>
+    <text x="390" y="721" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">usarItem("Poção de Vida Grande")</text>
+  
+  
+    <line x1="640" y1="760" x2="640" y2="760" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="467" y="741" width="346" height="16" rx="4" fill="#0B1120"/>
+    <text x="640" y="753" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">obter() -> item.usar(this) [se falhar, não remove]</text>
+  
+  
+    <line x1="640" y1="792" x2="640" y2="792" stroke="#94A3B8" stroke-width="1.5"  marker-end="url(#arrow)"/>
+    <rect x="539.6" y="773" width="200.79999999999998" height="16" rx="4" fill="#0B1120"/>
+    <text x="640" y="785" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="11">inventario.remover(nomeItem)</text>
+  
+  
+    <line x1="140" y1="826" x2="1390" y2="826" stroke="#F59E0B" stroke-width="1.5"  marker-end="url(#arrow-amber)"/>
+    <rect x="585.4" y="807" width="359.2" height="16" rx="4" fill="#0B1120"/>
+    <text x="765" y="819" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="11">salvar(heroi) -> UPDATE personagens &amp; inventario</text>
+  
+</svg>

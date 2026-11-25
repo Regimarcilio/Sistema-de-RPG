@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">RPG System</text>
+    
+      <text x="455" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Combat Arena</text>
+      
+    
+      <text x="600" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Shop & Inventory</text>
+      
+    
+      <text x="765" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">SQLite Database</text>
+      <rect x="765" y="53" width="114" height="2" fill="#FBBF24"/>
+    
+      <text x="915" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Tests & OOP</text>
+      
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Run PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Object-Oriented Architecture &amp; SQLite Persistence</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Domain layer with abstraction, encapsulation, inheritance, and polymorphism persisted in a 3NF relational schema.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Sound Effects Active</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="1280" height="78" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="218" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Relational Persistence — SQLite (3NF)</text>
+  <text x="104" y="242" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Live inspection of rpg.db tables with PRAGMA foreign_keys = ON and ON DELETE CASCADE.</text>
+  <rect x="976" y="206" width="144" height="36" rx="8" fill="#1E293B"/>
+  <text x="1048" y="229" text-anchor="middle" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Refresh SELECT</text>
+  <rect x="1134" y="206" width="202" height="36" rx="8" fill="#F59E0B"/>
+  <text x="1235" y="229" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Recreate DB &amp; Run PoC</text>
+
+  <rect x="80" y="284" width="1280" height="144" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="316" fill="#F1F5F9" font-family="Georgia, serif" font-size="16" font-weight="bold">Relational Schema (Third Normal Form)</text>
+  
+      <rect x="104" y="334" width="398" height="74" rx="8" fill="#0F172A" stroke="#1E293B"/>
+      <text x="118" y="358" fill="#FBBF24" font-family="monospace" font-size="13.5" font-weight="bold">personagens</text>
+      <text x="488" y="358" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11.5">Entity (1)</text>
+      <text x="118" y="382" fill="#CBD5E1" font-family="monospace" font-size="11">PK id · UNIQUE nome · classe · nivel · vida_max · vida</text>
+      <text x="118" y="398" fill="#CBD5E1" font-family="monospace" font-size="11">mana_max · mana · forca · xp · ouro · capacidade</text>
+    
+      <rect x="522" y="334" width="398" height="74" rx="8" fill="#0F172A" stroke="#1E293B"/>
+      <text x="536" y="358" fill="#38BDF8" font-family="monospace" font-size="13.5" font-weight="bold">inventario</text>
+      <text x="906" y="358" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11.5">Associative (N:N)</text>
+      <text x="536" y="382" fill="#CBD5E1" font-family="monospace" font-size="11">PK (personagem_id, item_id) · FK personagem_id CASCADE</text>
+      <text x="536" y="398" fill="#CBD5E1" font-family="monospace" font-size="11">FK item_id · CHECK (quantidade > 0)</text>
+    
+      <rect x="940" y="334" width="398" height="74" rx="8" fill="#0F172A" stroke="#1E293B"/>
+      <text x="954" y="358" fill="#34D399" font-family="monospace" font-size="13.5" font-weight="bold">itens</text>
+      <text x="1324" y="358" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11.5">Catalog (1)</text>
+      <text x="954" y="382" fill="#CBD5E1" font-family="monospace" font-size="11">PK id · UNIQUE nome · tipo · preco CHECK (>= 0)</text>
+      <text x="954" y="398" fill="#CBD5E1" font-family="monospace" font-size="11">valor_efeito</text>
+    
+
+  <rect x="80" y="448" width="1280" height="156" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="480" fill="#F1F5F9" font-family="monospace" font-size="15" font-weight="bold">SELECT * FROM personagens</text>
+  <text x="1336" y="480" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2 row(s)</text>
+  <rect x="80" y="496" width="1280" height="32" fill="#0F172A"/>
+  <text x="104" y="517" fill="#94A3B8" font-family="monospace" font-size="12">id    nome        classe       nivel   vida   vida_max   mana   mana_max   forca   xp    ouro   capacidade</text>
+  <text x="104" y="552" fill="#E2E8F0" font-family="monospace" font-size="12">1     Arthas      Guerreiro        2    130        130      5         35      17   20      40           10</text>
+  <line x1="80" y1="566" x2="1360" y2="566" stroke="#1E293B"/>
+  <text x="104" y="590" fill="#E2E8F0" font-family="monospace" font-size="12">2     Legolas     Arqueiro         1     90         90     50         50      11    0     100           10</text>
+
+  <rect x="80" y="624" width="628" height="206" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="656" fill="#F1F5F9" font-family="monospace" font-size="15" font-weight="bold">SELECT * FROM itens</text>
+  <rect x="80" y="672" width="628" height="30" fill="#0F172A"/>
+  <text x="104" y="692" fill="#94A3B8" font-family="monospace" font-size="11.5">id   nome                    tipo        preco   effect</text>
+  <text x="104" y="724" fill="#E2E8F0" font-family="monospace" font-size="11.5">1    Small Health Potion     PocaoVida      20       30</text>
+  <text x="104" y="750" fill="#E2E8F0" font-family="monospace" font-size="11.5">2    Large Health Potion     PocaoVida      50       80</text>
+  <text x="104" y="776" fill="#E2E8F0" font-family="monospace" font-size="11.5">3    Mana Potion             PocaoMana      30       40</text>
+  <text x="104" y="802" fill="#E2E8F0" font-family="monospace" font-size="11.5">4    Experience Elixir       ElixirXP       60       50</text>
+
+  <rect x="732" y="624" width="628" height="206" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="756" y="656" fill="#F1F5F9" font-family="monospace" font-size="15" font-weight="bold">inventario (Readable JOIN)</text>
+  <rect x="732" y="672" width="628" height="30" fill="#0F172A"/>
+  <text x="756" y="692" fill="#94A3B8" font-family="monospace" font-size="11.5">character    item                    type        qty</text>
+  <text x="756" y="724" fill="#E2E8F0" font-family="monospace" font-size="11.5">Arthas       Small Health Potion     PocaoVida     1</text>
+  <text x="756" y="750" fill="#E2E8F0" font-family="monospace" font-size="11.5">Arthas       Mana Potion             PocaoMana     1</text>
+
+</svg>

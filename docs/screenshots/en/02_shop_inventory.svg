@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#0B1120"/>
+  
+  
+    <rect x="0" y="0" width="1440" height="68" fill="#0B1120"/>
+    <line x1="0" y1="68" x2="1440" y2="68" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="43" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">RPG System</text>
+    
+      <text x="455" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Combat Arena</text>
+      
+    
+      <text x="600" y="42" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Shop & Inventory</text>
+      <rect x="600" y="53" width="121.6" height="2" fill="#FBBF24"/>
+    
+      <text x="765" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">SQLite Database</text>
+      
+    
+      <text x="915" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">Tests & OOP</text>
+      
+    
+    <rect x="1245" y="18" width="115" height="32" rx="8" fill="#F59E0B"/>
+    <text x="1302" y="39" text-anchor="middle" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold">Run PoC</text>
+  
+  
+    <text x="80" y="114" fill="#F1F5F9" font-family="Georgia, serif" font-size="26" font-weight="bold">Object-Oriented Architecture &amp; SQLite Persistence</text>
+    <text x="80" y="140" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13.5">Domain layer with abstraction, encapsulation, inheritance, and polymorphism persisted in a 3NF relational schema.</text>
+    <rect x="1192" y="102" width="168" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1276" y="124" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Sound Effects Active</text>
+    <line x1="80" y1="162" x2="1360" y2="162" stroke="#1E293B" stroke-width="1"/>
+  
+  <rect x="80" y="186" width="1280" height="64" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="223" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="14">Active character:</text>
+  <rect x="236" y="200" width="230" height="36" rx="8" fill="#020617" stroke="#334155"/>
+  <text x="252" y="223" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="13">Arthas (Warrior · Lv 2)</text>
+  <text x="1140" y="223" fill="#FCD34D" font-family="monospace" font-size="14" font-weight="600">Gold: 40</text>
+  <text x="1240" y="223" fill="#E2E8F0" font-family="monospace" font-size="14">Capacity: 2/10</text>
+
+  <rect x="80" y="274" width="736" height="440" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="104" y="312" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Merchant Catalog</text>
+  <text x="104" y="336" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Validation order checks inventory capacity before charging gold.</text>
+
+  
+      <text x="104" y="376" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Small Health Potion</text>
+      <text x="281.6" y="376" fill="#94A3B8" font-family="monospace" font-size="12">· HealthPotion</text>
+      <text x="104" y="398" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Restores +30 Health (HP).</text>
+      <text x="676" y="388" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">20 gold</text>
+      <rect x="694" y="366" width="98" height="34" rx="8" fill="#F59E0B" stroke="none"/>
+      <text x="743" y="388" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Buy</text>
+      <line x1="104" y1="420" x2="792" y2="420" stroke="#1E293B"/>
+    
+      <text x="104" y="458" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Large Health Potion</text>
+      <text x="281.6" y="458" fill="#94A3B8" font-family="monospace" font-size="12">· HealthPotion</text>
+      <text x="104" y="480" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Restores +80 Health (HP).</text>
+      <text x="676" y="470" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">50 gold</text>
+      <rect x="694" y="448" width="98" height="34" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="743" y="470" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Buy</text>
+      <line x1="104" y1="502" x2="792" y2="502" stroke="#1E293B"/>
+    
+      <text x="104" y="540" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Mana Potion</text>
+      <text x="214.4" y="540" fill="#94A3B8" font-family="monospace" font-size="12">· ManaPotion</text>
+      <text x="104" y="562" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Restores +40 Mana (MP).</text>
+      <text x="676" y="552" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">30 gold</text>
+      <rect x="694" y="530" width="98" height="34" rx="8" fill="#F59E0B" stroke="none"/>
+      <text x="743" y="552" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Buy</text>
+      <line x1="104" y1="584" x2="792" y2="584" stroke="#1E293B"/>
+    
+      <text x="104" y="622" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="15" font-weight="bold">Experience Elixir</text>
+      <text x="264.8" y="622" fill="#94A3B8" font-family="monospace" font-size="12">· ExperienceElixir</text>
+      <text x="104" y="644" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Grants +50 Experience (XP) and may level up.</text>
+      <text x="676" y="634" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="14" font-weight="bold">60 gold</text>
+      <rect x="694" y="612" width="98" height="34" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="743" y="634" text-anchor="middle" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Buy</text>
+      
+    
+
+  <rect x="840" y="274" width="520" height="240" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="864" y="312" fill="#F1F5F9" font-family="Georgia, serif" font-size="20" font-weight="bold">Hero Inventory</text>
+  <text x="1336" y="312" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="12">2/10 slots</text>
+
+  <text x="864" y="362" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Small Health Potion</text>
+  <text x="864" y="382" fill="#94A3B8" font-family="monospace" font-size="12">HealthPotion · Qty 1 · Effect +30</text>
+  <rect x="1238" y="352" width="98" height="32" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="1287" y="373" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Use Item</text>
+  <line x1="864" y1="406" x2="1336" y2="406" stroke="#1E293B"/>
+
+  <text x="864" y="442" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Mana Potion</text>
+  <text x="864" y="462" fill="#94A3B8" font-family="monospace" font-size="12">ManaPotion · Qty 1 · Effect +40</text>
+  <rect x="1238" y="432" width="98" height="32" rx="8" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.35"/>
+  <text x="1287" y="453" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Use Item</text>
+
+  <rect x="840" y="538" width="520" height="176" rx="12" fill="#11192B" stroke="#1E293B"/>
+  <text x="864" y="574" fill="#F1F5F9" font-family="Georgia, serif" font-size="17" font-weight="bold">Domain Exception Lab</text>
+  <text x="864" y="600" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12.5">Trigger scenarios guarded by domain exceptions and inspect</text>
+  <text x="864" y="618" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12.5">the safe response from the backend and SQLite.</text>
+  <rect x="864" y="644" width="184" height="34" rx="8" fill="#1E293B"/>
+  <text x="956" y="666" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Use "Legendary Sword"</text>
+  <rect x="1062" y="644" width="212" height="34" rx="8" fill="#1E293B"/>
+  <text x="1168" y="666" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Save Name in Another Class</text>
+
+</svg>
